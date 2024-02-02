@@ -54,3 +54,16 @@ section a {
   padding: 20px;
   border-radius: 5px;
 }
+/* Add styles for the image preview in shop details */
+.shop-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for the image upload input */
+#imageUpload {
+    display: none;
+}
