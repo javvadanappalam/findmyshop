@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Shop Navigator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shop Navigator</title>
 </head>
 <body>
-<header>
-  <h1>Shop Navigator</h1>
-</header>
-<nav id="shopTypes">
-  <ul>
-    <li><a href="#" onclick="loadShops('electronics')">Electronics</a></li>
-    <li><a href="#" onclick="loadShops('clothing')">Clothing</a></li>
-    </ul>
-</nav>
-<main>
-  <section id="shopList">
+    <header>
+        <h1>Shop Navigator</h1>
+    </header>
+    
+    <nav id="shopTypes">
+        <ul>
+            <li><a href="#" onclick="loadShops('electronics')">Electronics</a></li>
+            <li><a href="#" onclick="loadShops('clothing')">Clothing</a></li>
+            <!-- Add more shop types as needed -->
+        </ul>
+    </nav>
+
+    <section id="shopList">
+        <!-- Shops will be dynamically loaded here -->
     </section>
-  <section id="shopDetails" style="display: none;">
+
+    <section id="shopDetails" style="display:none;">
+        <!-- Shop details will be displayed here -->
     </section>
-</main>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
