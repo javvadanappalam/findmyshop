@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>findmyshop</title>
+    <title>Shop Navigator</title>
 </head>
 <body>
     <header>
-        <h1>Shop Navigator</h1>
+        <div class="container">
+            <h1>Shop Navigator</h1>
+        </div>
     </header>
     
     <nav id="shopTypes">
-        <ul>
-            <li><a href="#" onclick="loadShops('electronics')">Electronics</a></li>
-            <li><a href="#" onclick="loadShops('clothing')">Clothing</a></li>
-            <!-- Add more shop types as needed -->
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="loadShops('electronics')">Electronics</a></li>
+                <li><a href="#" onclick="loadShops('clothing')">Clothing</a></li>
+                <!-- Add more shop types as needed -->
+            </ul>
+        </div>
     </nav>
 
     <section id="shopList">
-        <!-- Shops will be dynamically loaded here -->
+        <div class="container">
+            <!-- Shops will be dynamically loaded here -->
+        </div>
     </section>
 
     <section id="shopDetails" style="display:none;">
-        <!-- Shop details will be displayed here -->
+        <div class="container">
+            <!-- Shop details will be displayed here -->
+        </div>
     </section>
 
     <script src="script.js"></script>
 </body>
 </html>
-
