@@ -1,11 +1,11 @@
 const shopData = {
     electronics: [
-        { name: 'Gadget World', location: 'City Center' },
-        { name: 'Tech Haven', location: 'Tech Square' },
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
     clothing: [
-        { name: 'Fashion Express', location: 'Mall Street' },
-        { name: 'Trendy Threads', location: 'Fashion Plaza' },
+        { name: 'Fashion Express', location: 'Mall Street' ,imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Trendy Threads', location: 'Fashion Plaza' ,imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
     ],
     // Add more shop data as needed
 };
@@ -26,7 +26,7 @@ function loadShops(shopType) {
     } else {
         shops.forEach(shop => {
             const shopItem = document.createElement('div');
-            shopItem.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}')">${shop.name}</a>`;
+            shopItem.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
             shopListSection.appendChild(shopItem);
         });
     }
