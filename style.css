@@ -18,7 +18,7 @@ header {
 
 /* Navigation */
 nav {
-  background-color: #eee;
+  background-color: #efe;
   padding: 10px;
 }
 nav ul {
@@ -38,7 +38,7 @@ nav a {
 /* Sections */
 section {
   padding: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cfc;
 }
 section h2 {
   font-size: 1.2em;
