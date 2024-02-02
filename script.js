@@ -32,10 +32,27 @@ function loadShops(shopType) {
     }
 }
 
-function showShopDetails(name, location) {
+function showShopDetails(name, location, imagePath) {
     const shopDetailsSection = document.getElementById('shopDetails');
-    shopDetailsSection.innerHTML = `<h2>${name}</h2><p>Location: ${location}</p>`;
+    const shopDetailsNav = document.getElementById('shopDetailsNav');
+
+    shopDetailsSection.innerHTML = `
+        <img src="${imagePath}" alt="${name}" class="shop-detail-image">
+        <h2>${name}</h2>
+        <p>Location: ${location}</p>
+    `;
+
     shopDetailsSection.style.display = 'block';
+    shopDetailsNav.style.display = 'block';
+}
+
+// Add a function to go back to the home view
+function goHome() {
+    const shopDetailsSection = document.getElementById('shopDetails');
+    const shopDetailsNav = document.getElementById('shopDetailsNav');
+
+    shopDetailsSection.style.display = 'none';
+    shopDetailsNav.style.display = 'none';
 }
 // Modify the showShopDetails function to include the image parameter
 function showShopDetails(name, location, imagePath) {
