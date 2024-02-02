@@ -37,3 +37,32 @@ function showShopDetails(name, location) {
     shopDetailsSection.innerHTML = `<h2>${name}</h2><p>Location: ${location}</p>`;
     shopDetailsSection.style.display = 'block';
 }
+// Modify the showShopDetails function to include the image parameter
+function showShopDetails(name, location, imagePath) {
+    const shopDetailsSection = document.getElementById('shopDetails');
+    shopDetailsSection.innerHTML = `
+        <div class="container">
+            <img src="${imagePath}" alt="${name}" class="shop-detail-image">
+            <h2>${name}</h2>
+            <p>Location: ${location}</p>
+        </div>
+    `;
+    shopDetailsSection.style.display = 'block';
+}
+
+// New function to handle image upload
+function handleImageUpload(event) {
+    const imagePreview = document.getElementById('imagePreview');
+    const fileInput = event.target;
+
+    if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+}
