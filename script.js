@@ -95,3 +95,4 @@ function toggleSubcategories(mainCategory) {
     mainCategory.classList.toggle('active');
 }
 
+
