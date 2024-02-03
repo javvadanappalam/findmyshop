@@ -11,13 +11,30 @@
         <h1>Shop Navigator</h1>
     </header>
     
-    <nav id="shopTypes">
+ <nav id="shopTypes">
+    <div class="container">
         <ul>
-            <li><a href="#" onclick="loadShops('electronics')">Electronics</a></li>
-            <li><a href="#" onclick="loadShops('clothing')">Clothing</a></li>
-            <!-- Add more shop types as needed -->
+            <li>
+                <a href="#" onclick="loadShops('grocery')">Grocery Stores</a>
+                <ul class="subcategories">
+                    <li><a href="#" onclick="loadShops('supermarkets')">Supermarkets</a></li>
+                    <li><a href="#" onclick="loadShops('convenience')">Convenience Stores</a></li>
+                    <li><a href="#" onclick="loadShops('organic')">Organic Markets</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="loadShops('clothing')">Clothing and Apparel</a>
+                <ul class="subcategories">
+                    <li><a href="#" onclick="loadShops('boutiques')">Clothing Boutiques</a></li>
+                    <li><a href="#" onclick="loadShops('department')">Department Stores</a></li>
+                    <li><a href="#" onclick="loadShops('shoe')">Shoe Stores</a></li>
+                </ul>
+            </li>
+            <!-- Repeat similar structure for other shop types -->
+            <!-- ... -->
         </ul>
-    </nav>
+    </div>
+</nav>
 
     <section id="shopList">
         <!-- Shops will be dynamically loaded here -->
