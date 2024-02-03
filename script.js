@@ -83,3 +83,15 @@ function handleImageUpload(event) {
         reader.readAsDataURL(fileInput.files[0]);
     }
 }
+function toggleSubcategories(mainCategory) {
+    const allCategories = document.querySelectorAll('.main-category');
+    
+    allCategories.forEach(category => {
+        if (category !== mainCategory) {
+            category.classList.remove('active');
+        }
+    });
+
+    mainCategory.classList.toggle('active');
+}
+
