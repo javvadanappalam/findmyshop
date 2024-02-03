@@ -10,24 +10,41 @@
     <header>
         <h1>Shop Navigator</h1>
     </header>
-    
- <nav id="shopTypes">
+    <nav id="shopTypes">
     <div class="container">
         <ul>
-            <li>
-                <a href="#" onclick="loadShops('grocery')">Grocery Stores</a>
+            <li class="main-category" onclick="toggleSubcategories(this)">
+                <a href="#">Grocery Stores</a>
                 <ul class="subcategories">
                     <li><a href="#" onclick="loadShops('supermarkets')">Supermarkets</a></li>
                     <li><a href="#" onclick="loadShops('convenience')">Convenience Stores</a></li>
                     <li><a href="#" onclick="loadShops('organic')">Organic Markets</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#" onclick="loadShops('clothing')">Clothing and Apparel</a>
+            <!-- Repeat similar structure for other shop types -->
+            <!-- ... -->
+        </ul>
+    </div>
+</nav>
+
+ <nav id="shopTypes">
+    <div class="container">
+        <ul>
+           <li class="main-category" onclick="toggleSubcategories(this)">
+                <a href="#">Grocery Stores</a>
                 <ul class="subcategories">
-                    <li><a href="#" onclick="loadShops('boutiques')">Clothing Boutiques</a></li>
-                    <li><a href="#" onclick="loadShops('department')">Department Stores</a></li>
-                    <li><a href="#" onclick="loadShops('shoe')">Shoe Stores</a></li>
+                    <li><a href="#" onclick="loadShops('supermarkets')">Supermarkets</a></li>
+                    <li><a href="#" onclick="loadShops('convenience')">Convenience Stores</a></li>
+                    <li><a href="#" onclick="loadShops('organic')">Organic Markets</a></li>
+                </ul>
+            </li>
+            </li>
+            <li class="main-category" onclick="toggleSubcategories(this)">
+                <a href="#">Clothings</a>
+                <ul class="subcategories">
+                    <li><a href="#" onclick="loadShops('supermarkets')">Supermarkets</a></li>
+                    <li><a href="#" onclick="loadShops('convenience')">Convenience Stores</a></li>
+                    <li><a href="#" onclick="loadShops('organic')">Organic Markets</a></li>
                 </ul>
             </li>
             <!-- Repeat similar structure for other shop types -->
