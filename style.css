@@ -67,3 +67,15 @@ section a {
 #imageUpload {
     display: none;
 }
+.subcategories {
+    display: none;
+}
+
+.subcategories li {
+    display: block;
+}
+
+.main-category.active .subcategories {
+    display: block;
+}
+
