@@ -1,16 +1,36 @@
 const shopData = {
-    electronics: [
+    grocery: {
+     supermarkets:[
         { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
         { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
-    clothing: [
-        { name: 'Fashion Express', location: 'Mall Street' ,imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
-        { name: 'Trendy Threads', location: 'Fashion Plaza' ,imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+    convenience:[
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
+    organic:[
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
+    ]
+    },
+    clothing: {
+     supermarkets:[
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
+    ],
+    convenience:[
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
+    ],
+    organic:[
+        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
+    ]
+    }
     // Add more shop data as needed
 };
 
-function loadShops(shopType) {
+function loadShops(shopType,under) {
     const shopListSection = document.getElementById('shopList');
     const shopDetailsSection = document.getElementById('shopDetails');
 
@@ -19,7 +39,7 @@ function loadShops(shopType) {
     shopDetailsSection.style.display = 'none';
 
     // Load shops for the selected type
-    const shops = shopData[shopType] || [];
+    const shops = shopData[shopType][under] || [];
 
     if (shops.length === 0) {
         shopListSection.innerHTML = '<p>No shops available for this category.</p>';
