@@ -37,10 +37,15 @@ nav a {
 
 /* Sections */
 section {
+  position:relative;
+  color:white;
   padding: 20px;
   border-bottom: 1px solid #cfc;
 }
 section h2 {
+  position:absolute;
+  bottom:8px;
+  top:50%;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
