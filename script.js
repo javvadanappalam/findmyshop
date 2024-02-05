@@ -46,7 +46,7 @@ function loadShops(shopType,under) {
     } else {
         shops.forEach(shop => {
             const shopItem = document.createElement('div');
-            shopItem.Id = 'shoplist';
+            shopItem.id = 'shoplist';
             const ul = document.createElement('ul');
             const li = document.createElement('li');
             li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
