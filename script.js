@@ -49,7 +49,7 @@ function loadShops(shopType,under) {
             const ul = document.createElement('ul');
             const li = document.createElement('li');
             li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
-            li.style = "list-style:none;background-color: #f5f5f5;padding: 20px;border-radius: 5px;"
+            li.style = "list-style:none;background-color: #f5f5f5;padding: 20px;border-radius: 5px;border: 1px solid black;"
             ul.appendChild(li)
             shopItem.appendChild(ul)
             shopListSection.appendChild(shopItem);
