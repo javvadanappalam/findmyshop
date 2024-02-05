@@ -54,8 +54,11 @@ section a {
   padding: 20px;
   border-radius: 5px;
 }
-#shopList div ul li:before{
-    position: relative;
+#shopList div ul li:after{
+    position: absolute;
+  right: 0; /* Align to the right edge of the box */
+  top: 50%; /* Vertically align to the middle */
+  transform: translateY(-50%); 
     /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
     content: "";
     display: inline-block;
