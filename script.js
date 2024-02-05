@@ -81,6 +81,7 @@ function goHome() {
 }
 // Modify the showShopDetails function to include the image parameter
 function showShopDetails(name, location, imagePath) {
+    document.getElementById('shopList').style.display = 'none'
     const shopDetailsSection = document.getElementById('shopDetails');
     shopDetailsSection.innerHTML = `
         <div class="container">
