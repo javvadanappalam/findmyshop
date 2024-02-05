@@ -1,7 +1,7 @@
 const shopData = {
     grocery: {
      supermarkets:[
-        { name: 'MKH supermarket', location: 'palakkad,thrippanachi',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'MKH supermarket', location: 'palakkad,thrippanachi',imagePath:'mkh.jpg'},
         { name: 'Rayan supermarket', location: 'pookolathur',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
     convenience:[
