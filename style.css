@@ -60,8 +60,8 @@ section a {
     content: "";
     display: inline-block;
     /* By using an em scale, the arrows will size with the font */
-    width: 0.4em;
-    height: 0.4em;
+    width: 1em;
+    height: 1em;
     border-right: 0.2em solid black;
     border-top: 0.2em solid black;
     transform: rotate(45deg);
