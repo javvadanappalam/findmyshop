@@ -46,8 +46,12 @@ function loadShops(shopType,under) {
     } else {
         shops.forEach(shop => {
             const shopItem = document.createElement('div');
-            shopItem.style = "background-color: #f5f5f5;padding: 20px;border-radius: 5px;"
-            shopItem.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
+            const ul = document.createElement('ul');
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
+            li.style = "background-color: #f5f5f5;padding: 20px;border-radius: 5px;"
+            ul.appendChild(li)
+            shopItem.appendChild(ul)
             shopListSection.appendChild(shopItem);
         });
     }
