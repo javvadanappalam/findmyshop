@@ -49,7 +49,7 @@ function loadShops(shopType,under) {
         shops.forEach(shop => {
             shopItem.id = 'shoplist';
             const li = document.createElement('li');
-            li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
+            li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','${shop.imagePath}')">${shop.name}</a>`;
             li.style = "list-style:none;background-color: white;padding: 20px;border-radius: 10px;border: 1px solid black;"
             ul.appendChild(li)
             shopItem.appendChild(ul)
