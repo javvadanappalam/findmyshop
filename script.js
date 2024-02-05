@@ -44,10 +44,10 @@ function loadShops(shopType,under) {
     if (shops.length === 0) {
         shopListSection.innerHTML = '<p>No shops available for this category.</p>';
     } else {
+        const shopItem = document.createElement('div');
+         const ul = document.createElement('ul');
         shops.forEach(shop => {
-            const shopItem = document.createElement('div');
-            shopItem.class = 'shoplist';
-            const ul = document.createElement('ul');
+            shopItem.id = 'shoplist';
             const li = document.createElement('li');
             li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
             li.style = "list-style:none;background-color: white;padding: 20px;border-radius: 10px;border: 1px solid black;"
@@ -82,9 +82,9 @@ function goHome() {
 }
 // Modify the showShopDetails function to include the image parameter
 function showShopDetails(name, location, imagePath) {
-    for(var i =0;i< document.getElementsByClassName('shoplist').length;i++){
-    document.getElementsByClassName('shoplist')[i].innerHTML = ''
-    }
+
+    document.getElementById('shoplist').innerHTML = ''
+  
     const shopDetailsSection = document.getElementById('shopDetails');
     shopDetailsSection.innerHTML = `
         <div class="container">
