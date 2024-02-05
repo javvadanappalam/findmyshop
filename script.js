@@ -46,6 +46,7 @@ function loadShops(shopType,under) {
     } else {
         shops.forEach(shop => {
             const shopItem = document.createElement('div');
+            shopItem.Id = 'shoplist';
             const ul = document.createElement('ul');
             const li = document.createElement('li');
             li.innerHTML = `<a href="#" onclick="showShopDetails('${shop.name}', '${shop.location}','$(shop.imagePath)')">${shop.name}</a>`;
@@ -81,7 +82,7 @@ function goHome() {
 }
 // Modify the showShopDetails function to include the image parameter
 function showShopDetails(name, location, imagePath) {
-    document.getElementById('shopList').style.display = 'none'
+    document.getElementById('shoplist').innerHTML = ''
     const shopDetailsSection = document.getElementById('shopDetails');
     shopDetailsSection.innerHTML = `
         <div class="container">
