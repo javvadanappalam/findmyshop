@@ -82,7 +82,9 @@ function goHome() {
 }
 // Modify the showShopDetails function to include the image parameter
 function showShopDetails(name, location, imagePath) {
-    document.getElementById('shoplist').innerHTML = ''
+    for(var i =0;i< document.getElementsByClassName('shoplist').length;i++){
+    document.getElementsByClassName('shoplist')[i].innerHTML = ''
+    }
     const shopDetailsSection = document.getElementById('shopDetails');
     shopDetailsSection.innerHTML = `
         <div class="container">
