@@ -5,7 +5,7 @@ const shopData = {
         { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
     convenience:[
-        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'UB travels', location: 'chemmad',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
         { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
     organic:[
@@ -15,7 +15,7 @@ const shopData = {
     },
     clothing: {
      supermarkets:[
-        { name: 'Gadget World', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
+        { name: 'MKH supermarket', location: 'City Center',imagePath:'https://images.app.goo.gl/3cEsiizfgugjATee8'},
         { name: 'Tech Haven', location: 'Tech Square',imagePath: 'https://images.app.goo.gl/nq2qhpbqhvn7hBjE8'},
     ],
     convenience:[
